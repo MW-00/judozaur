@@ -11995,13 +11995,6 @@ body {
 }
 
 .menuItemActive {
-  color: var(--bs-info);
-  font-family: "Overpass Mono", monospace;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  padding: 14px;
   color: black;
   font-weight: 700;
 }
@@ -12010,7 +12003,7 @@ body {
   color: var(--bs-danger);
 }
 
-.menuItem:hover {
+.menuItem:hover:not(.menuItemActive):hover {
   color: black;
   font-weight: 400;
   transition: 0.5s;
@@ -12063,12 +12056,12 @@ p {
 }
 
 .japan {
-  color: #D9D9D9;
+  color: #e2e2e2;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  transform: translateY(-20%);
+  transform: translateY(-35%);
 }
 
 ul {
@@ -12079,4 +12072,15 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  height: 70vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
