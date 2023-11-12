@@ -11979,9 +11979,14 @@ body {
 }
 
 .menu {
+  height: 100%;
   text-transform: uppercase;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
+  writing-mode: vertical-lr; /* vertical-rl or vertical-lr, depending on your preferred text orientation */
+  text-orientation: upright; /* upright or mixed, depending on your preferred text orientation */
+}
+
+a {
+  color: inherit;
 }
 
 .menuItem {
@@ -12049,6 +12054,8 @@ h2, .h2 {
 }
 
 p {
+  text-align: justify;
+  text-justify: inter-ideograph;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;

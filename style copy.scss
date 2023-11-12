@@ -15,8 +15,9 @@ body {
 
 
 .menu {
-height: 100%;
-   
+
+    display: flex;
+    flex-direction: column;
     text-transform: uppercase;
     writing-mode: vertical-lr; /* vertical-rl or vertical-lr, depending on your preferred text orientation */
     text-orientation: upright; /* upright or mixed, depending on your preferred text orientation */
@@ -30,8 +31,14 @@ height: 100%;
 // }
 
 
-a {
-    color: inherit;
+#collapseMenu a {
+    color: var(--bs-info);
+    font-family: 'Overpass Mono', monospace;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 14px;
 }
 
 .menuItem {
@@ -43,6 +50,7 @@ a {
     line-height: 28px;
     padding: 14px;
 }
+
 
 .menuItemActive {
     color: black;
@@ -103,8 +111,6 @@ h2 {
 }
 
 p {
-    text-align: justify;
-    text-justify: inter-ideograph;
     font-family: 'Inter', sans-serif;
     // font-size: 15px;
     font-style: normal;

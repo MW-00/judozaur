@@ -14,34 +14,50 @@
 
 
     <div class="container-fluid">
-        <div class="row h-100">
+        <div class="row h-100 d-flex flex-column flex-lg-row">
 
-            <!-- lewa część  -->
-            <div class="col-2 d-flex flex-column align-items-center m-5" style="min-width: 250px;">
-                <!-- logo -->
-                <div>
-                    <img src="images/maleJudo.png" class="logo" alt="logo">
-                </div>
-                <!-- menu -->
-                <ul class="menu mt-5">
-                    <a href="podstrony/zajecia.html" target="iframe1">
-                        <li class="menuItem menuItemActive">zajęcia</li>
-                    </a>
-                    <a href="podstrony/filozofia.html" target="iframe1">
-                        <li class="menuItem">filozofia</li>
-                    </a>
-                    <a href="podstrony/harmonogram.html" target="iframe1">
-                        <li class="menuItem">harmonogram</li>
-                    </a>
-                    <a href="podstrony/trener.html" target="iframe1">
-                        <li class="menuItem">trener</li>
-                    </a>
-                    <a href="podstrony/kontakt.html" target="iframe1">
-                        <li class="menuItem">kontakt</li>
-                    </a>
-                </ul>
+
+            <!-- lewa kolumna strony menu-->
+            <div class="col-sm-12 col-lg-2 d-flex flex-column align-items-center m-0 m-lg-5"
+                style="min-width: 250px;">
+
+                <nav class="navbar d-flex flex-column justify-content-center">
+                    <div class="d-flex ">
+                        <div class="" style="width:auto; height: auto;">
+                            <img src="images/maleJudo.png" class="logo" alt="logo">
+                        </div>
+
+                        <div class="d-lg-none ms-5 d-flex align-items-center">
+                            <button id="menuButton" class="btn" type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="collapseMenu" class="m-0 p-0">
+                        <ul  class="menu d-flex flex-column align-items-start justify-content-center col-10 d-lg-block mt-5">
+                            <li class="menuItem menuItemActive">
+                                <a href="podstrony/zajecia.html" target="iframe1">zajęcia</a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="podstrony/filozofia.html" target="iframe1">filozofia</a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="podstrony/harmonogram.html" target="iframe1">harmonogram</a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="podstrony/trener.html" target="iframe1">trener</a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="podstrony/kontakt.html" target="iframe1">kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </nav>
+
+
             </div>
-
 
             <div class="col m-0 p-0 iframeContainer">
 
@@ -53,7 +69,11 @@
     </div>
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
