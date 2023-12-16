@@ -10,7 +10,8 @@
 
 </head>
 
-<body>
+<body class="mx-3 mx-sm-0" style="">
+<!-- <body class="mx-3 mx-sm-0" style="display: none;"> -->
 
 
     <div class="container-fluid">
@@ -18,13 +19,12 @@
 
 
             <!-- lewa kolumna strony menu-->
-            <div class="col-sm-12 col-lg-2 d-flex flex-column align-items-center m-0 m-lg-5"
-                style="min-width: 250px;">
+            <div class="col-sm-12 col-lg-2 d-flex flex-column align-items-center m-0 m-lg-5" style="min-width: 250px;">
 
                 <nav class="navbar d-flex flex-column justify-content-center">
                     <div class="d-flex ">
                         <div class="" style="width:auto; height: auto;">
-                            <img src="images/maleJudo.png" class="logo" alt="logo">
+                            <a href="index.html"><img src="images/maleJudo.png" class="logo" alt="logo"></a>
                         </div>
 
                         <div class="d-lg-none ms-5 d-flex align-items-center">
@@ -35,15 +35,16 @@
                     </div>
 
                     <div id="collapseMenu" class="m-0 p-0">
-                        <ul  class="menu d-flex flex-column align-items-start justify-content-center col-10 d-lg-block mt-5">
+                        <ul
+                            class="menu d-flex flex-column align-items-start justify-content-center col-10 d-lg-block mt-5">
                             <li class="menuItem menuItemActive">
-                                <a href="podstrony/zajecia.html" target="iframe1">zajęcia</a>
+                                <a href="podstrony/zajecia copy.html" target="iframe1">małe/judo</a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="podstrony/harmonogram.html" target="iframe1">zajęcia</a>
                             </li>
                             <li class="menuItem">
                                 <a href="podstrony/filozofia.html" target="iframe1">filozofia</a>
-                            </li>
-                            <li class="menuItem">
-                                <a href="podstrony/harmonogram.html" target="iframe1">harmonogram</a>
                             </li>
                             <li class="menuItem">
                                 <a href="podstrony/trener.html" target="iframe1">trener</a>
@@ -53,21 +54,21 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </nav>
 
 
             </div>
 
+            <!-- iframe - zawartosc stron -->
             <div class="col m-0 p-0 iframeContainer">
+                <iframe id="iframe" name="iframe1" src="podstrony/zajecia copy.html" class="m-0 p-0"></iframe>
 
-                <iframe name="iframe1" src="podstrony/zajecia.html" class="m-0 p-0"></iframe>
-
+               
             </div>
         </div>
-
+      
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
